@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Flat Barbell Bench Press",
+    "description": "Press a barbell from chest level while lying on a flat bench.",
+    "category": "strength",
+    "muscleGroup": ["lower chest", "upper chest", "front delt", "tricep mid"]
+  },
+  {
+    "name": "Incline Dumbbell Press",
+    "description": "Press dumbbells upward on an incline bench with controlled movement.",
+    "category": "strength",
+    "muscleGroup": ["upper chest", "front delt", "tricep long"]
+  },
+  {
+    "name": "Push-Up",
+    "description": "Lower and press the body from a plank position using bodyweight.",
+    "category": "strength",
+    "muscleGroup": ["upper chest", "lower chest", "front delt", "tricep mid"]
+  },
+  {
+    "name": "Pull-Up",
+    "description": "Pull the body upward from a hanging position until the chin clears the bar.",
+    "category": "strength",
+    "muscleGroup": ["lats", "upper back", "bicep long", "forearms"]
+  },
+  {
+    "name": "Bent-Over Barbell Row",
+    "description": "Pull a barbell toward the torso while maintaining a hinged position.",
+    "category": "strength",
+    "muscleGroup": ["upper back", "lats", "rear delt", "bicep long"]
+  },
+  {
+    "name": "Conventional Deadlift",
+    "description": "Lift a barbell from the floor by extending the hips and knees.",
+    "category": "strength",
+    "muscleGroup": ["spinal erectors", "glutes", "hamstrings", "traps", "forearms"]
+  },
+  {
+    "name": "Back Squat",
+    "description": "Squat with a barbell supported across the upper back.",
+    "category": "strength",
+    "muscleGroup": ["quads", "glutes", "hamstrings", "spinal erectors"]
+  },
+  {
+    "name": "Romanian Deadlift",
+    "description": "Lower a barbell through a hip hinge while keeping the legs slightly bent.",
+    "category": "strength",
+    "muscleGroup": ["hamstrings", "glutes", "spinal erectors", "forearms"]
+  },
+  {
+    "name": "Walking Lunge",
+    "description": "Step forward into alternating lunges while keeping the torso upright.",
+    "category": "strength",
+    "muscleGroup": ["quads", "glutes", "hamstrings", "calves"]
+  },
+  {
+    "name": "Barbell Hip Thrust",
+    "description": "Extend the hips against a barbell while the upper back rests on a bench.",
+    "category": "strength",
+    "muscleGroup": ["glutes", "hamstrings"]
+  },
+  {
+    "name": "Standing Calf Raise",
+    "description": "Raise the heels by extending the ankles from a standing position.",
+    "category": "strength",
+    "muscleGroup": ["calves"]
+  },
+  {
+    "name": "Overhead Press",
+    "description": "Press a barbell from shoulder height until the arms are extended overhead.",
+    "category": "strength",
+    "muscleGroup": ["front delt", "tricep long", "traps"]
+  },
+  {
+    "name": "Dumbbell Lateral Raise",
+    "description": "Raise dumbbells out to the sides until the arms approach shoulder height.",
+    "category": "strength",
+    "muscleGroup": ["lateral head", "traps"]
+  },
+  {
+    "name": "Rear Delt Fly",
+    "description": "Move the arms outward against resistance while keeping a slight elbow bend.",
+    "category": "strength",
+    "muscleGroup": ["rear delt", "upper back"]
+  },
+  {
+    "name": "Barbell Bicep Curl",
+    "description": "Curl a barbell toward the shoulders without swinging the torso.",
+    "category": "strength",
+    "muscleGroup": ["bicep long", "bicep short", "forearms"]
+  },
+  {
+    "name": "Tricep Pushdown",
+    "description": "Extend the elbows downward against a cable attachment.",
+    "category": "strength",
+    "muscleGroup": ["tricep long", "tricep short", "tricep mid"]
+  },
+  {
+    "name": "Plank",
+    "description": "Hold a straight body position while supported by the forearms and toes.",
+    "category": "strength",
+    "muscleGroup": ["upper abs", "lower abs", "obliques"]
+  },
+  {
+    "name": "Russian Twist",
+    "description": "Rotate the torso from side to side while holding a seated position.",
+    "category": "strength",
+    "muscleGroup": ["obliques", "upper abs", "lower abs"]
+  },
+  {
+    "name": "Running",
+    "description": "Run at a steady or interval pace for cardiovascular conditioning.",
+    "category": "cardio",
+    "muscleGroup": ["quads", "hamstrings", "glutes", "calves"]
+  },
+  {
+    "name": "Stationary Cycling",
+    "description": "Pedal a stationary bike at a steady or interval pace.",
+    "category": "cardio",
+    "muscleGroup": ["quads", "hamstrings", "glutes", "calves"]
+  },
+  {
+    "name": "Jump Rope",
+    "description": "Perform repeated rope rotations and jumps for cardiovascular conditioning.",
+    "category": "cardio",
+    "muscleGroup": ["calves", "quads", "forearms"]
+  },
+  {
+    "name": "Hamstring Stretch",
+    "description": "Lengthen the muscles along the back of the thigh using a controlled hold.",
+    "category": "flexibility",
+    "muscleGroup": ["hamstrings", "calves"]
+  },
+  {
+    "name": "Standing Quad Stretch",
+    "description": "Pull one foot toward the glutes to stretch the front of the thigh.",
+    "category": "flexibility",
+    "muscleGroup": ["quads"]
+  },
+  {
+    "name": "Thoracic Rotation",
+    "description": "Rotate the upper torso through a comfortable range while keeping the hips stable.",
+    "category": "mobility",
+    "muscleGroup": ["upper back", "obliques", "spinal erectors"]
+  },
+  {
+    "name": "Shoulder Circles",
+    "description": "Move both shoulders through controlled circular ranges of motion.",
+    "category": "mobility",
+    "muscleGroup": ["front delt", "rear delt", "traps"]
+  }
+]
