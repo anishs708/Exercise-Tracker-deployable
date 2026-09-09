@@ -1,4 +1,3 @@
-import { Timestamp } from "mongodb";
 import mongoose from "mongoose";
 
 const workoutSchema = new mongoose.Schema({
@@ -13,15 +12,24 @@ const workoutSchema = new mongoose.Schema({
     exercises:[{
         exercise:{
         type:mongoose.Schema.Types.ObjectId,
-        ref: "Exercise"
+        ref: "Exercise",
+        required: true
     },
-        sets: Number,
-        reps: Number,
-        weight: Number
+        sets: {
+            type: Number,
+            required: true,
+            min: 1
+        },
+        reps: {
+            type: Number,
+            required: true,
+            min: 1
+        }
     }],
     user:{
         type:mongoose.Schema.Types.ObjectId,
-        ref: "User"
+        ref: "User",
+        required: true
     }
 },{timestamps: true});
 const Workout = mongoose.model("Workout",workoutSchema);

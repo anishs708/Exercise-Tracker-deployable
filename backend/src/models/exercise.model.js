@@ -13,7 +13,13 @@ const exerciseSchema = new mongoose.Schema({
         type: String,
         enum: ["cardio", "strength", "flexibility", "mobility"],
         required: true
-        },
+    },
+    trackingType: {
+        type: String,
+        enum: ["external_weight", "bodyweight", "bodyweight_added"],
+        default: "external_weight",
+        required: true
+    },
     muscleGroup: [{
         type: String,
         enum: ["upper chest","lower chest","spinal erectors","tricep long","tricep short","tricep mid","bicep long","bicep short","lateral head",'front delt','rear delt'

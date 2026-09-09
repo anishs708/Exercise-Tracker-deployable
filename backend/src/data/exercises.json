@@ -12,15 +12,42 @@
     "muscleGroup": ["upper chest", "front delt", "tricep long"]
   },
   {
-    "name": "Push-Up",
-    "description": "Lower and press the body from a plank position using bodyweight.",
+    "name": "Smith Machine Incline Bench Press",
+    "description": "Press the Smith machine bar upward from an incline bench.",
+    "category": "strength",
+    "muscleGroup": ["upper chest", "front delt", "tricep long"]
+  },
+  {
+    "name": "Cable Chest Press",
+    "description": "Press cable handles forward while keeping the shoulder blades controlled.",
     "category": "strength",
     "muscleGroup": ["upper chest", "lower chest", "front delt", "tricep mid"]
   },
   {
-    "name": "Pull-Up",
-    "description": "Pull the body upward from a hanging position until the chin clears the bar.",
+    "name": "Pec Deck",
+    "description": "Bring the machine handles together in front of the chest with controlled movement.",
     "category": "strength",
+    "muscleGroup": ["upper chest", "lower chest", "front delt"]
+  },
+  {
+    "name": "Push-Up",
+    "description": "Lower and press the body from a plank position using bodyweight.",
+    "category": "strength",
+    "trackingType": "bodyweight",
+    "muscleGroup": ["upper chest", "lower chest", "front delt", "tricep mid"]
+  },
+  {
+    "name": "Dip",
+    "description": "Lower and press the body on parallel bars. Record weight as 0 for bodyweight or enter only the added external weight for weighted dips.",
+    "category": "strength",
+    "trackingType": "bodyweight_added",
+    "muscleGroup": ["lower chest", "front delt", "tricep long", "tricep mid"]
+  },
+  {
+    "name": "Pull-Up",
+    "description": "Pull the body upward until the chin clears the bar. Record weight as 0 for bodyweight or enter only the added external weight for weighted pull-ups.",
+    "category": "strength",
+    "trackingType": "bodyweight_added",
     "muscleGroup": ["lats", "upper back", "bicep long", "forearms"]
   },
   {
@@ -30,7 +57,31 @@
     "muscleGroup": ["upper back", "lats", "rear delt", "bicep long"]
   },
   {
-    "name": "Conventional Deadlift",
+    "name": "T-Bar Row",
+    "description": "Pull a loaded T-bar toward the torso while maintaining a stable hip hinge.",
+    "category": "strength",
+    "muscleGroup": ["upper back", "lats", "rear delt", "bicep long"]
+  },
+  {
+    "name": "Machine T-Bar Row",
+    "description": "Pull the handles of a chest-supported T-bar row machine toward the torso.",
+    "category": "strength",
+    "muscleGroup": ["upper back", "lats", "rear delt", "bicep long"]
+  },
+  {
+    "name": "Seated Cable Row",
+    "description": "Pull a cable attachment toward the torso from a seated position.",
+    "category": "strength",
+    "muscleGroup": ["upper back", "lats", "rear delt", "bicep long"]
+  },
+  {
+    "name": "Face Pull",
+    "description": "Pull a rope attachment toward the face while rotating the upper arms outward.",
+    "category": "strength",
+    "muscleGroup": ["rear delt", "upper back", "traps"]
+  },
+  {
+    "name": "Deadlift",
     "description": "Lift a barbell from the floor by extending the hips and knees.",
     "category": "strength",
     "muscleGroup": ["spinal erectors", "glutes", "hamstrings", "traps", "forearms"]
@@ -42,8 +93,8 @@
     "muscleGroup": ["quads", "glutes", "hamstrings", "spinal erectors"]
   },
   {
-    "name": "Romanian Deadlift",
-    "description": "Lower a barbell through a hip hinge while keeping the legs slightly bent.",
+    "name": "Romanian Deadlift (RDL)",
+    "description": "Lower a barbell through a hip hinge while keeping the knees slightly bent.",
     "category": "strength",
     "muscleGroup": ["hamstrings", "glutes", "spinal erectors", "forearms"]
   },
@@ -54,14 +105,33 @@
     "muscleGroup": ["quads", "glutes", "hamstrings", "calves"]
   },
   {
-    "name": "Barbell Hip Thrust",
-    "description": "Extend the hips against a barbell while the upper back rests on a bench.",
+    "name": "Pistol Squat",
+    "description": "Perform a controlled single-leg squat while extending the other leg forward.",
+    "category": "strength",
+    "trackingType": "bodyweight",
+    "muscleGroup": ["quads", "glutes", "hamstrings", "calves"]
+  },
+  {
+    "name": "Leg Extension",
+    "description": "Extend the knees against the resistance of a leg extension machine.",
+    "category": "strength",
+    "muscleGroup": ["quads"]
+  },
+  {
+    "name": "Leg Curl",
+    "description": "Flex the knees against the resistance of a leg curl machine.",
+    "category": "strength",
+    "muscleGroup": ["hamstrings"]
+  },
+  {
+    "name": "Hip Thrust",
+    "description": "Extend the hips against resistance while the upper back rests on a bench.",
     "category": "strength",
     "muscleGroup": ["glutes", "hamstrings"]
   },
   {
-    "name": "Standing Calf Raise",
-    "description": "Raise the heels by extending the ankles from a standing position.",
+    "name": "Calf Raise",
+    "description": "Raise the heels by extending the ankles through a controlled range of motion.",
     "category": "strength",
     "muscleGroup": ["calves"]
   },
@@ -70,6 +140,18 @@
     "description": "Press a barbell from shoulder height until the arms are extended overhead.",
     "category": "strength",
     "muscleGroup": ["front delt", "tricep long", "traps"]
+  },
+  {
+    "name": "Dumbbell Shoulder Press",
+    "description": "Press dumbbells from shoulder height until the arms are extended overhead.",
+    "category": "strength",
+    "muscleGroup": ["front delt", "lateral head", "tricep long"]
+  },
+  {
+    "name": "Machine Lateral Raise",
+    "description": "Raise the machine arms outward to train the lateral deltoids.",
+    "category": "strength",
+    "muscleGroup": ["lateral head", "traps"]
   },
   {
     "name": "Dumbbell Lateral Raise",
@@ -90,15 +172,84 @@
     "muscleGroup": ["bicep long", "bicep short", "forearms"]
   },
   {
-    "name": "Tricep Pushdown",
+    "name": "Spider Curl",
+    "description": "Curl a barbell or dumbbells while the chest is supported on an incline bench.",
+    "category": "strength",
+    "muscleGroup": ["bicep short", "bicep long"]
+  },
+  {
+    "name": "Reverse Curl",
+    "description": "Curl a barbell or cable attachment using a palms-down grip.",
+    "category": "strength",
+    "muscleGroup": ["bicep long", "forearms"]
+  },
+  {
+    "name": "Cable Hammer Curl",
+    "description": "Curl a rope attachment with the palms facing each other.",
+    "category": "strength",
+    "muscleGroup": ["bicep long", "bicep short", "forearms"]
+  },
+  {
+    "name": "Forearm Curl",
+    "description": "Flex the wrists against resistance with the palms facing upward.",
+    "category": "strength",
+    "muscleGroup": ["forearms"]
+  },
+  {
+    "name": "Reverse Forearm Curl",
+    "description": "Extend the wrists against resistance with the palms facing downward.",
+    "category": "strength",
+    "muscleGroup": ["forearms"]
+  },
+  {
+    "name": "Cable Tricep Extension",
     "description": "Extend the elbows downward against a cable attachment.",
     "category": "strength",
     "muscleGroup": ["tricep long", "tricep short", "tricep mid"]
   },
   {
+    "name": "Cable Overhead Tricep Extension",
+    "description": "Extend the elbows overhead against a cable while keeping the upper arms stable.",
+    "category": "strength",
+    "muscleGroup": ["tricep long", "tricep mid"]
+  },
+  {
+    "name": "Skull Crusher",
+    "description": "Lower a bar toward the forehead by bending the elbows, then extend the arms.",
+    "category": "strength",
+    "muscleGroup": ["tricep long", "tricep short", "tricep mid"]
+  },
+  {
+    "name": "Leg Raise",
+    "description": "Raise the legs while keeping the torso stable to train the abdominal muscles.",
+    "category": "strength",
+    "trackingType": "bodyweight",
+    "muscleGroup": ["lower abs", "upper abs"]
+  },
+  {
+    "name": "Toes-to-Bar Leg Raise",
+    "description": "Raise the legs from a hanging position until the toes approach the bar.",
+    "category": "strength",
+    "trackingType": "bodyweight",
+    "muscleGroup": ["lower abs", "upper abs", "forearms"]
+  },
+  {
+    "name": "Kettlebell Oblique Crunch",
+    "description": "Crunch laterally while holding a kettlebell to load the obliques.",
+    "category": "strength",
+    "muscleGroup": ["obliques"]
+  },
+  {
+    "name": "Dumbbell Back Extension Oblique Crunch",
+    "description": "Perform a weighted side crunch while positioned sideways on a back extension machine.",
+    "category": "strength",
+    "muscleGroup": ["obliques", "spinal erectors"]
+  },
+  {
     "name": "Plank",
     "description": "Hold a straight body position while supported by the forearms and toes.",
     "category": "strength",
+    "trackingType": "bodyweight",
     "muscleGroup": ["upper abs", "lower abs", "obliques"]
   },
   {
@@ -108,9 +259,17 @@
     "muscleGroup": ["obliques", "upper abs", "lower abs"]
   },
   {
+    "name": "Sprint",
+    "description": "Run at near-maximum speed for a short interval followed by recovery.",
+    "category": "cardio",
+    "trackingType": "bodyweight",
+    "muscleGroup": ["quads", "hamstrings", "glutes", "calves"]
+  },
+  {
     "name": "Running",
     "description": "Run at a steady or interval pace for cardiovascular conditioning.",
     "category": "cardio",
+    "trackingType": "bodyweight",
     "muscleGroup": ["quads", "hamstrings", "glutes", "calves"]
   },
   {
@@ -123,30 +282,7 @@
     "name": "Jump Rope",
     "description": "Perform repeated rope rotations and jumps for cardiovascular conditioning.",
     "category": "cardio",
-    "muscleGroup": ["calves", "quads", "forearms"]
-  },
-  {
-    "name": "Hamstring Stretch",
-    "description": "Lengthen the muscles along the back of the thigh using a controlled hold.",
-    "category": "flexibility",
-    "muscleGroup": ["hamstrings", "calves"]
-  },
-  {
-    "name": "Standing Quad Stretch",
-    "description": "Pull one foot toward the glutes to stretch the front of the thigh.",
-    "category": "flexibility",
-    "muscleGroup": ["quads"]
-  },
-  {
-    "name": "Thoracic Rotation",
-    "description": "Rotate the upper torso through a comfortable range while keeping the hips stable.",
-    "category": "mobility",
-    "muscleGroup": ["upper back", "obliques", "spinal erectors"]
-  },
-  {
-    "name": "Shoulder Circles",
-    "description": "Move both shoulders through controlled circular ranges of motion.",
-    "category": "mobility",
-    "muscleGroup": ["front delt", "rear delt", "traps"]
+    "trackingType": "bodyweight",
+    "muscleGroup": ["calves", "quads"]
   }
 ]

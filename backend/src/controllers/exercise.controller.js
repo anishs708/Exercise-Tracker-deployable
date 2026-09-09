@@ -10,7 +10,7 @@ const getAExercise = asyncHandler(async(req,res)=>{
     }
     const found = await exercise.findOne({_id: id});
     if(!found){
-        res.status(400);
+        res.status(404);
         throw new Error("Exercise is not found");
     }
     res.status(200).json(found);

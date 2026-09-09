@@ -1,4 +1,3 @@
-import mongoose from "mongoose";
 import user from "../models/user.model.js";
 import asyncHandler from "express-async-handler";
 import validator from "validator";
@@ -8,11 +7,11 @@ import jwt from "jsonwebtoken";
 const createToken = (_id)=>{
     return jwt.sign({_id},process.env.SECRET_SAUCE,{expiresIn: '3d'})
 }
-const signIn = asyncHandler(async(req,res)=>{
+const signUp = asyncHandler(async(req,res)=>{
     const {email,password,name,height,weight,age} = req.body;
     if(!email || !password || !name ||!height || !weight || !age){
         res.status(400);
-        throw new Error("Can't leave any field emtpy");
+        throw new Error("Can't leave any field empty");
     }
     if(!validator.isEmail(email)){
         res.status(400)
@@ -37,7 +36,7 @@ const signIn = asyncHandler(async(req,res)=>{
             sameSite: "lax",
             maxAge: 3 * 24 * 60 * 60 * 1000
         })
-    res.status(200).json({email});
+    res.status(201).json({email});
 });
 const logIn = asyncHandler(async(req,res)=>{
     const {email,password} = req.body;
@@ -74,4 +73,4 @@ const logoutUser = asyncHandler((req, res) => {
 
   res.status(200).json({ message: "Logged out" });
 });
-export {signIn,logIn,logoutUser};
+export {signUp,logIn,logoutUser};

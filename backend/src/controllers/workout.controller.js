@@ -11,7 +11,7 @@ const getAWorkout = asyncHandler(async(req,res)=>{
     const user_id = req.user._id
     const found = await workout.findOne({_id:id,user : user_id});
     if(!found){
-        res.status(400);
+        res.status(404);
         throw new Error("Didn't find this workout")
     }
     res.status(200).json(found);
@@ -29,7 +29,15 @@ const updateWorkout = asyncHandler(async(req,res)=>{
         throw new Error("Doesn't exist");
     }
     const user_id = req.user._id
-    const updated = await workout.findOneAndUpdate({_id: id, user: user_id}, req.body,{new:true});
+    const updated = await workout.findOneAndUpdate(
+        {_id: id, user: user_id},
+        req.body,
+        {new:true, runValidators:true}
+    );
+    if(!updated){
+        res.status(404);
+        throw new Error("Didn't find this workout");
+    }
     res.status(200).json(updated);
 });
 const deleteWorkout = asyncHandler(async(req,res)=>{
@@ -40,6 +48,10 @@ const deleteWorkout = asyncHandler(async(req,res)=>{
 }
     const user_id = req.user._id;
     const deleted = await workout.findOneAndDelete({_id:id,user:user_id});
+    if(!deleted){
+        res.status(404);
+        throw new Error("Didn't find this workout");
+    }
     res.status(200).json(deleted);
 })
 const createWorkout = asyncHandler(async(req,res)=>{
@@ -50,6 +62,6 @@ const createWorkout = asyncHandler(async(req,res)=>{
     }
     const user_id = req.user._id
     const newWorkout = await workout.create({name,description,exercises,user:user_id});
-    res.status(200).json(newWorkout);
+    res.status(201).json(newWorkout);
 })
 export {createWorkout,deleteWorkout,updateWorkout,getAWorkout,getAllWorkouts}
